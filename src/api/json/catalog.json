@@ -2662,6 +2662,18 @@
       "url": "https://enterprisecontract.dev/enterprise-contract-controller/schema/policy_spec.json"
     },
     {
+      "name": "Enonic XP API descriptor",
+      "description": "Enonic XP API descriptor",
+      "fileMatch": [
+        "**/src/main/resources/apis/*/*.yaml",
+        "**/src/main/resources/apis/*/*.yml"
+      ],
+      "url": "https://www.schemastore.org/enonic-xp-api-descriptor-8.0.0.json",
+      "versions": {
+        "8.0.0": "https://www.schemastore.org/enonic-xp-api-descriptor-8.0.0.json"
+      }
+    },
+    {
       "name": ".esmrc.json",
       "description": "Configuration files for the esm module/package in Node.js",
       "fileMatch": [".esmrc", ".esmrc.json"],
