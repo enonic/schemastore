@@ -2663,7 +2663,7 @@
     },
     {
       "name": "Enonic XP API descriptor",
-      "description": "Enonic XP API descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Universal and Harmonized APIs.\nhttps://developer.enonic.com/docs/cms/stable/apis",
       "fileMatch": [
         "**/src/main/resources/apis/*/*.yaml",
         "**/src/main/resources/apis/*/*.yml"
@@ -2676,7 +2676,7 @@
     },
     {
       "name": "Enonic XP Admin Extension descriptor",
-      "description": "Enonic XP Admin Extension descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Admin Extensions.\nhttps://developer.enonic.com/docs/code/stable/framework",
       "fileMatch": [
         "**/src/main/resources/admins/extensions/*/*.yaml",
         "**/src/main/resources/admins/extensions/*/*.yml"
@@ -2689,7 +2689,7 @@
     },
     {
       "name": "Enonic XP Admin Tool descriptor",
-      "description": "Enonic XP Admin Tool descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Admin Tools.\nhttps://developer.enonic.com/docs/code/stable/framework",
       "fileMatch": [
         "**/src/main/resources/admin/tools/*/*.yaml",
         "**/src/main/resources/admin/tools/*/*.yml"
@@ -2702,7 +2702,7 @@
     },
     {
       "name": "Enonic XP Application descriptor",
-      "description": "Enonic XP Application descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Applications.\nhttps://developer.enonic.com/docs/code/stable/framework",
       "fileMatch": [
         "**/src/main/resources/application.yaml",
         "**/src/main/resources/application.yml"
@@ -2715,7 +2715,7 @@
     },
     {
       "name": "Enonic XP CMS descriptor",
-      "description": "Enonic XP CMS descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP CMS configuration.\nhttps://developer.enonic.com/docs/code/stable/framework",
       "fileMatch": [
         "**/src/main/resources/cms/cms.yaml",
         "**/src/main/resources/cms/cms.yml"
@@ -2728,7 +2728,7 @@
     },
     {
       "name": "Enonic XP Content Type descriptor",
-      "description": "Enonic XP Content Type descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Content Types.\nhttps://developer.enonic.com/docs/cms/stable/content/content-types",
       "fileMatch": [
         "**/src/main/resources/cms/content-types/*/*.yaml",
         "**/src/main/resources/cms/content-types/*/*.yml"
@@ -2741,7 +2741,7 @@
     },
     {
       "name": "Enonic XP Form Fragment descriptor",
-      "description": "Enonic XP Form Fragment descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Form Fragments.\nhttps://developer.enonic.com/docs/cms/stable/schemas/form-fragments",
       "fileMatch": [
         "**/src/main/resources/cms/form-fragments/*/*.yaml",
         "**/src/main/resources/cms/form-fragments/*/*.yml"
@@ -2754,7 +2754,7 @@
     },
     {
       "name": "Enonic XP ID Provider descriptor",
-      "description": "Enonic XP ID Provider descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP ID Providers.\nhttps://developer.enonic.com/docs/code/stable/framework",
       "fileMatch": [
         "**/src/main/resources/idprovider/idprovider.yaml",
         "**/src/main/resources/idprovider/idprovider.yml"
@@ -2767,7 +2767,7 @@
     },
     {
       "name": "Enonic XP Layout descriptor",
-      "description": "Enonic XP Layout descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Layouts.\nhttps://developer.enonic.com/docs/cms/stable/pages/parts#layouts",
       "fileMatch": [
         "**/src/main/resources/cms/layouts/*/*.yaml",
         "**/src/main/resources/cms/layouts/*/*.yml"
@@ -2780,7 +2780,7 @@
     },
     {
       "name": "Enonic XP Macro descriptor",
-      "description": "Enonic XP Macro descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Macros.\nhttps://developer.enonic.com/docs/cms/stable/richtext/macros",
       "fileMatch": [
         "**/src/main/resources/cms/macros/*/*.yaml",
         "**/src/main/resources/cms/macros/*/*.yml"
@@ -2793,7 +2793,7 @@
     },
     {
       "name": "Enonic XP Mixin descriptor",
-      "description": "Enonic XP Mixin descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Mixins.\nhttps://developer.enonic.com/docs/cms/stable/content/mixins",
       "fileMatch": [
         "**/src/main/resources/cms/mixins/*/*.yaml",
         "**/src/main/resources/cms/mixins/*/*.yml"
@@ -2806,7 +2806,7 @@
     },
     {
       "name": "Enonic XP Page descriptor",
-      "description": "Enonic XP Page descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Pages.\nhttps://developer.enonic.com/docs/cms/stable/pages#pages",
       "fileMatch": [
         "**/src/main/resources/cms/pages/*/*.yaml",
         "**/src/main/resources/cms/pages/*/*.yml"
@@ -2819,7 +2819,7 @@
     },
     {
       "name": "Enonic XP Part descriptor",
-      "description": "Enonic XP Part descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Parts.\nhttps://developer.enonic.com/docs/cms/stable/pages/parts#parts",
       "fileMatch": [
         "**/src/main/resources/cms/parts/*/*.yaml",
         "**/src/main/resources/cms/parts/*/*.yml"
@@ -2832,7 +2832,7 @@
     },
     {
       "name": "Enonic XP Service descriptor",
-      "description": "Enonic XP Service descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Services.\nhttps://developer.enonic.com/docs/code/stable/framework",
       "fileMatch": [
         "**/src/main/resources/services/*/*.yaml",
         "**/src/main/resources/services/*/*.yml"
@@ -2845,7 +2845,7 @@
     },
     {
       "name": "Enonic XP Site descriptor",
-      "description": "Enonic XP Site descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Sites.\nhttps://developer.enonic.com/docs/cms/stable/pages#sites",
       "fileMatch": [
         "**/src/main/resources/cms/site.yaml",
         "**/src/main/resources/cms/site.yml"
@@ -2858,7 +2858,7 @@
     },
     {
       "name": "Enonic XP Style descriptor",
-      "description": "Enonic XP Style descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Styles.\nhttps://developer.enonic.com/docs/cms/stable/richtext/styles",
       "fileMatch": [
         "**/src/main/resources/cms/style/style.yaml",
         "**/src/main/resources/cms/style/style.yml"
@@ -2871,7 +2871,7 @@
     },
     {
       "name": "Enonic XP Task descriptor",
-      "description": "Enonic XP Task descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Tasks.\nhttps://developer.enonic.com/docs/code/stable/framework",
       "fileMatch": [
         "**/src/main/resources/tasks/*/*.yaml",
         "**/src/main/resources/tasks/*/*.yml"
@@ -2884,7 +2884,7 @@
     },
     {
       "name": "Enonic XP Webapp descriptor",
-      "description": "Enonic XP Webapp descriptor.\nhttps://developer.enonic.com/docs/code/stable/framework",
+      "description": "YAML descriptor for Enonic XP Webapps.\nhttps://developer.enonic.com/docs/code/stable/framework",
       "fileMatch": [
         "**/src/main/resources/webapp/webapp.yaml",
         "**/src/main/resources/webapp/webapp.yml"
