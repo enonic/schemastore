@@ -64,9 +64,6 @@
         "pattern": {
           "type": "string"
         },
-        "contentConstraint": {
-          "type": "string"
-        },
         "invertPattern": {
           "type": "boolean"
         },
@@ -93,31 +90,23 @@
           ]
         },
         {
+          "not": {
+            "required": [
+              "controller",
+              "filter"
+            ]
+          }
+        },
+        {
           "if": {
             "required": [
-              "service"
+              "invertPattern"
             ]
           },
           "then": {
-            "not": {
-              "anyOf": [
-                {
-                  "required": [
-                    "pattern"
-                  ]
-                },
-                {
-                  "required": [
-                    "contentConstraint"
-                  ]
-                },
-                {
-                  "required": [
-                    "controller"
-                  ]
-                }
-              ]
-            }
+            "required": [
+              "pattern"
+            ]
           }
         }
       ],
