@@ -1,130 +1,135 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://json.schemastore.org/enonic-xp-site-8.0.0.json",
-    "type": "object",
-    "properties": {
-        "kind": {
-            "type": "string",
-            "const": "Site"
-        },
-        "processors": {
-            "type": "array",
-            "items": {
-                "$ref": "#/$defs/processor"
-            }
-        },
-        "mappings": {
-            "type": "array",
-            "items": {
-                "$ref": "#/$defs/controllerMapping"
-            }
-        },
-        "apis": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        },
-        "config": {
-            "$ref": "#/$defs/genericValueDef"
-        }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://json.schemastore.org/enonic-xp-site-8.0.0.json",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "const": "Site"
     },
-    "required": [
-        "kind"
-    ],
-    "additionalProperties": false,
-    "$defs": {
-        "processor": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "order": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "name"
-            ],
-            "additionalProperties": false
-        },
-        "controllerMapping": {
-            "type": "object",
-            "properties": {
-                "service": {
-                    "type": "string"
-                },
-                "controller": {
-                    "type": "string"
-                },
-                "filter": {
-                    "type": "string"
-                },
-                "pattern": {
-                    "type": "string"
-                },
-                "contentConstraint": {
-                    "type": "string"
-                },
-                "invertPattern": {
-                    "type": "boolean"
-                },
-                "match": {
-                    "type": "string"
-                },
-                "order": {
-                    "type": "integer"
-                }
-            },
-            "allOf": [
-                {
-                    "oneOf": [
-                        {
-                            "required": [
-                                "controller"
-                            ]
-                        },
-                        {
-                            "required": [
-                                "filter"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "if": {
-                        "required": [
-                            "service"
-                        ]
-                    },
-                    "then": {
-                        "not": {
-                            "anyOf": [
-                                {
-                                    "required": [
-                                        "pattern"
-                                    ]
-                                },
-                                {
-                                    "required": [
-                                        "contentConstraint"
-                                    ]
-                                }
-                            ]
-                        }
-                    }
-                }
-            ],
-            "additionalProperties": false
-        },
-        "genericValueDef": {
-            "type": "object",
-            "additionalProperties": {
-                "not": {
-                    "type": "null"
-                }
-            }
-        }
+    "processors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/processor"
+      }
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/controllerMapping"
+      }
+    },
+    "apis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "config": {
+      "$ref": "#/$defs/genericValueDef"
     }
+  },
+  "required": [
+    "kind"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "processor": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "controllerMapping": {
+      "type": "object",
+      "properties": {
+        "service": {
+          "type": "string"
+        },
+        "controller": {
+          "type": "string"
+        },
+        "filter": {
+          "type": "string"
+        },
+        "pattern": {
+          "type": "string"
+        },
+        "contentConstraint": {
+          "type": "string"
+        },
+        "invertPattern": {
+          "type": "boolean"
+        },
+        "match": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        }
+      },
+      "allOf": [
+        {
+          "oneOf": [
+            {
+              "required": [
+                "controller"
+              ]
+            },
+            {
+              "required": [
+                "filter"
+              ]
+            }
+          ]
+        },
+        {
+          "if": {
+            "required": [
+              "service"
+            ]
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "pattern"
+                  ]
+                },
+                {
+                  "required": [
+                    "contentConstraint"
+                  ]
+                },
+                {
+                  "required": [
+                    "controller"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "genericValueDef": {
+      "type": "object",
+      "additionalProperties": {
+        "not": {
+          "type": "null"
+        }
+      }
+    }
+  }
 }
